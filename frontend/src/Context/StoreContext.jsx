@@ -8,7 +8,7 @@ const StoreContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState({});
   const [token, setToken] = useState(localStorage.getItem("token") || null);
   const [food_list, setFoodList] = useState([]);
-  const url="http://localhost:9000";
+  const url="https://food-del-backend-2xat.onrender.com";
 
   const addToCart = async (itemId) => {
     
